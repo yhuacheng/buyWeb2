@@ -1,0 +1,10 @@
+'use strict'
+const merge = require('webpack-merge')
+const prodEnv = require('./prod.env')
+
+module.exports = merge(prodEnv, {
+  NODE_ENV: '"development"',
+  API_HOST:"/api",
+  //API_ROOT: '"http://192.168.111.103"',
+  API_ROOT: '"http://119.23.78.0"',
+})
